@@ -19,5 +19,3 @@ if not exist %~dp0WinPython %PKG% /S /D=%~dp0WinPython
 
 : Load the WinPython environment so other scripts can call Python.
 call %~dp0WinPython\scripts\env.bat
-
-python --version
