@@ -17,5 +17,4 @@ if not exist %PKG% %~dp0curl.exe -L -o %PKG% %URL%
 : If the package has not been 'installed' install it.
 if not exist %~dp0WinPython %PKG% /S /D=%~dp0WinPython
 
-: Load the WinPython environment so other scripts can call Python.
-call %~dp0WinPython\scripts\env.bat
+call %~dp0WinPython\scripts\upgrade_pip.bat
