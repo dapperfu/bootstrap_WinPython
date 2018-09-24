@@ -18,3 +18,6 @@ if not exist %PKG% %~dp0curl.exe -L -o %PKG% %URL%
 if not exist %~dp0WinPython %PKG% /S /D=%~dp0WinPython
 
 call %~dp0WinPython\scripts\upgrade_pip.bat
+
+attrib +r %~dp0WinPython
+attrib +h %~dp0
