@@ -2,7 +2,7 @@
 : If WinPython URL is not defined (set through Jenkins, etc)
 IF "%WINPYTHON_URL%"=="" (
 : Use a known default
-set URL=https://github.com/winpython/winpython/releases/download/1.9.20171031/WinPython-64bit-3.6.3.0Zero.exe
+set URL=https://github.com/winpython/winpython/releases/download/1.10.20180827/WinPython64-3.6.6.2Qt5.exe
 ) ELSE (
 : Otherwise use the given URL.
 set URL=%WINPYTHON_URL%
@@ -20,4 +20,4 @@ if not exist %~dp0WinPython %PKG% /S /D=%~dp0WinPython
 call %~dp0WinPython\scripts\upgrade_pip.bat
 
 attrib +r %~dp0WinPython
-attrib +h %~dp0
+attrib +h %~dp0.
