@@ -2,7 +2,7 @@
 : If WinPython URL is not defined (set through Jenkins, etc)
 IF "%WINPYTHON_URL%"=="" (
 : Use a known default
-set URL=https://github.com/winpython/winpython/releases/download/1.10.20180827/WinPython64-3.6.6.2Qt5.exe
+set URL=https://github.com/winpython/winpython/releases/download/1.11.20181031/Winpython64-3.6.7.0Qt5.exe
 ) ELSE (
 : Otherwise use the given URL.
 set URL=%WINPYTHON_URL%
